@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>StringX Herrera</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&effect=splintered|Homemade+Apple|Permanent+Marker" rel="stylesheet"> -->
+	<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/bootstrap-cyborg.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="home">
+
+	<!-- Navbar Top -->
+
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-transparent">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="navbar-main">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">About</a></li>
+	        <li class="dropdown">
+	          <a href="#" id="songs" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+	          	Songs <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu" data-bind="foreach: songsArray">
+	          	<li data-bind="text: title"></li>
+<!-- 	            <li><a href="#">Song 1</a></li>
+	            <li><a href="#">Song 2</a></li>
+	            <li><a href="#">Song 3</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">Song 4</a></li>
+	            <li><a href="#">Song 5</a></li>
+	            <li><a href="#">Song 6</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">Song 7</a></li>
+	            <li><a href="#">Song 8</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">Song 9</a></li>
+	            <li><a href="#">Song 10</a></li>
+ -->	          </ul>
+	        </li>
+	      </ul>
+	      <!-- <form class="navbar-form navbar-left" role="search"> -->
+	<!--         <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button> -->
+	      <!-- </form> -->
+	      <ul class="nav navbar-nav navbar-right">
+			<li><a href="(123) 456-7890" role="button"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a></li>
+	        <li><a href="StringX Herrera" role="button"><span><i class="fa fa-facebook"></i></span></a></li>
+	        <li><a href="#" role="button"><span><i class="fa fa-twitter"></i></span></a></li>
+	        <li><a href="stringxherrera@yahoo.com" role="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+	        <li><a href="stringxherrera@yahoo.com" role="button"><img src="images/Myspace_2012_icon.png" role="button" style="height: 1.5em" aria-hidden="true"></a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav> <!-- Navbar Top -->
+
+
+	<div class="splash" style="background position: 0 0;">
+
+		<!-- Jumbotron -->
+		<div class="jumbotron bgimg text-center">
+
+			<!-- Title -->
+			<!-- <h1 class= "title ">String X</h1> -->
+			<span><img class="img-responsive" src="images/stringx_white.png" alt="String X logo" style="height: 50vh; margin: 0 auto"></span>
+			<div style="font-style: italic; height: 50vh">
+				<h4>Voices of Silence</h4>
+
+				<!-- Song Carousel -->
+				<div class="text-center">
+					<div id="carousel"></div>
+				</div>
+			</div>
+
+		</div> <!-- Jumbotron -->
+
+		<div class="text-center"> <!-- Theme -->
+
+			<h2>love the music</h2>
+
+		</div> <!-- Theme -->
+
+	</div> <!-- splash -->
+
+
+
+	 <div class="container"> <!-- Songs -->
+
+ 	 	<!-- Song Album pictures -->
+<!-- 	 	<div class="well col-md-5 col-md-offset-1">
+	 		<img class="img-responsive" src="images/Twisted-Scenery-pic.jpg" srcset="images/Twisted-Scenery-pic.jpg 1024w" sizes="50vw" alt="Song 1">
+		</div>
+ -->
+ 		<div class="text-center">
+	 	<!-- <div class="well col-md-5 col-md-offset-5">  Song List -->
+			<h2>
+				<p>Voices of Silence</p><br>
+			</h2>
+			<h4>
+				<ul data-bind="foreach: songsArray">
+ 					<li data-toggle="modal"  data-bind="text: title, attr: { 'data-target': songNum }">Art of the Gun</li><br>
+	<!-- 					<li data-toggle="modal" data-target="#song1">Art of the Gun</li><br>
+					<li data-toggle="modal" data-target="#song2">Chess</li><br>
+					<li data-toggle="modal" data-target="#song3">Dead on Arrival</li><br>
+					<li data-toggle="modal" data-target="#song4">I will be free</li><br>
+					<li data-toggle="modal" data-target="#song5">It’s you</li><br>
+					<li data-toggle="modal" data-target="#song6">Love hits me down</li><br>
+					<li data-toggle="modal" data-target="#song7">Passing Rites</li><br>
+					<li data-toggle="modal" data-target="#song8">The Race</li><br>
+					<li data-toggle="modal" data-target="#song9">Twisted Scenery</li><br>
+					<li data-toggle="modal" data-target="#song10">Winner</li><br> -->
+				</ul>
+			</h4>
+		</div> <!-- Song List -->
+
+		<div class="container">
+			<footer>
+				<div class="row">
+					<div class="col-lg-12">
+
+			            <ul class="list-unstyled">
+			              <li class="pull-right"><a href="#top">Back to top</a></li>
+			              <li><a href="#">Phone</a></li>
+			              <li><a href="#">Phone</a></li>
+			              <li><a href="https://twitter.com/stringX">Twitter</a></li>
+			              <li><a href="#">Facebook</a></li>
+			              <li><a href="#">Email</a></li>
+			            </ul>
+
+			            <p>Made by <a href="http://mariacristinasales.com" rel="nofollow">@jinglebot</a>. Contact her at <a href="mailto:jingle1216@yahoo.com">jingle1216@bootswatch.com</a>.</p>
+			            <p>Code released under the <a href="https://github.com/@jinglebot/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
+			            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>.Open source from <a href="https://github.com/jinglebot/StringX/" rel="nofollow">GitHub</a>. </p>
+
+			 		</div>
+				</div>
+
+			</footer>
+		</div>
+	 </div> <!-- Songs -->
+
+	 <!-- Social Media -->
+<!-- 				 	<ul>
+				 		<li>
+				 			<address>
+					 			<bold>John Herrera</bold><br>
+					 			Manager<br>
+					 			<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(123) 456-7890<br>
+				 			</address>
+				 		</li>
+				 		<li>
+				 			<address>
+				 			<bold>Harry Herrera</bold><br>
+				 			<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(123) 456-7890<br>
+				 			</address>
+				 		</li>
+				 	</ul> -->
+
+
+
+
+
+	 <!-- Navbar -->
+<!-- 	 <div class="navbar navbar-inverse navbar-fixed-bottom">
+	 	<div>
+	 		<p class="navbar-text pull-left">Site Built By <a href="https://twitter.com/jinglebot" class="label label-default"><span><i class="fa fa-twitter"></i></span>@jinglebot</a></p>
+	 	</div>
+		<div class="navbar-text pull-right footer">
+			<p>Stringx: John Herrera (Vocals, Guitars, Keyboards, Songwriter)</p>
+			<p>Harry Herrera (Guitars, Songwriter)</p>
+			<p>Produced by StringX and Brian Irwin</p>
+		</div>
+	 </div>  --><!-- Navbar -->
+
+
+	 <!-- Modal Song 1 -->
+			<div class="modal fade" id="song1" tabindex="-1" role="dialog" aria-labelledby="AboutModalLabel" aria-hidden="true">
+      			<div class="modal-dialog">
+        			<div class="modal-content">
+          				<div class="modal-header">
+            				<h4 class="modal-title" id="AboutModalLabel"><b>Art of the Gun</b></h4>
+          				</div>
+          				<div class="modal-body">
+            				<figure>
+              					<img class="img-responsive" src="images/Twisted-Scenery-pic.jpg" srcset="images/Twisted-Scenery-pic.jpg 1024w" sizes="100vw" alt="Song 1">
+              					<figcaption>the pic will be the play button</figcaption>
+            				</figure>
+            			</br>
+            				<p>Art of the Gun</p>
+              				<p>❉ Created by Harry Herrera and John Herrera</p>
+              				<p>❉ San Francisco, 2014</p>
+              				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          				</div>
+          				<div class="modal-footer">
+            				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          				</div>
+        			</div>
+      			</div>
+    		</div>
+
+	 <!-- Modal Song 2 -->
+			<div class="modal fade" id="song2" tabindex="-1" role="dialog" aria-labelledby="AboutModalLabel" aria-hidden="true">
+      			<div class="modal-dialog">
+        			<div class="modal-content">
+          				<div class="modal-header">
+            				<h4 class="modal-title" id="AboutModalLabel"><b>Chess</b></h4>
+          				</div>
+          				<div class="modal-body">
+            				<figure>
+              					<img class="img-responsive" src="images/Twisted-Scenery-pic.jpg" srcset="images/Twisted-Scenery-pic.jpg 1024w" sizes="100vw" alt="Song 2">
+              					<figcaption>the pic will be the play button</figcaption>
+            				</figure>
+            				</br>
+            				<p>Chess</p>
+              				<p>❉ Created by John Herrera and Harry Herrera</p>
+              				<p>❉ San Francisco, 2014</p>
+          				</div>
+          				<div class="modal-footer">
+            				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          				</div>
+        			</div>
+      			</div>
+    		</div>
+
+	 <!-- Modal Song 3 -->
+			<div class="modal fade" id="song3" tabindex="-1" role="dialog" aria-labelledby="AboutModalLabel" aria-hidden="true">
+      			<div class="modal-dialog">
+        			<div class="modal-content">
+          				<div class="modal-header">
+            				<h4 class="modal-title" id="AboutModalLabel"><b>Dead on Arrival</b></h4>
+          				</div>
+          				<div class="modal-body">
+            				<figure>
+            					<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+              					<!-- <img class="img-responsive" src="images/Twisted-Scenery-pic.jpg" srcset="images/Twisted-Scenery-pic.jpg 1024w" sizes="100vw" alt="Song 2"> -->
+              					<figcaption>play me</figcaption>
+            				</figure>
+            				</br>
+            				<p>Chess</p>
+              				<p>❉ Created by John Herrera and Harry Herrera</p>
+              				<p>❉ San Francisco, 2014</p>
+          				</div>
+          				<div class="modal-footer">
+            				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          				</div>
+        			</div>
+      			</div>
+    		</div>
+
+
+
+
+	<!-- // <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
+	<script src="js/libs/jQuery.js"></script>
+    <script src="js/libs/knockout-3.4.0.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/carousel.js"></script>
+ 	<script>
+ 		testi_elem = document.getElementById("carousel");
+ 		testi_ofOne();
+ 	</script>
+</body>
+</html>

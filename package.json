@@ -1,0 +1,11 @@
+{
+  "name": "StringX-Music",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-responsive-images": "^0.1.9"
+  },
+  "dependencies": {
+    "imager.js": "^0.5.0"
+  }
+}
