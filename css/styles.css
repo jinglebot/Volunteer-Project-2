@@ -8,7 +8,13 @@
 /*nav bar transparent*/
 /*footer*/
 /*mvvm format*/
+/*song list modal*/
 /*knockout model*/
+/*nav bar modal*/
+/*carousel-knockout*/
+/*carousel modal*/
+/*modal modal-content*/
+/*playlist style or single track record style*/
 
 
 
@@ -25,7 +31,7 @@
 
 h1 {
 	font-weight: 700;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 
 div h4 {
@@ -33,7 +39,7 @@ div h4 {
 }
 
 .carousel {
-	padding: 0.2em;
+	padding: 1em;
 }
 
 #home {
@@ -53,7 +59,24 @@ div h4 {
 li {
 	/*float: left;*/
 	margin-right: 1.5em;
-	margin-bottom: 1.5em;
+}
+
+.modal-body figure img {
+	position: relative;
+	width: 100%;
+}
+
+.modal-body figure h2 {
+	position: absolute;
+	top: 3em;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.rotate {
+	transform: rotate(-40deg);
+	transform-origin: left bottom 10;
 }
 
 .well {
@@ -64,26 +87,26 @@ li {
 }
 
 
-#testimonials {
-	opacity: 0;
-	-webkit-transition: opacity linear 2s ease-in-out;
-	-moz-transition: opacity linear 2s ease-in-out;
-	-o-transition: opacity linear 2s ease-in-out;
-	transition: opacity linear 2s ease-in-out;
+/*.carousel-fade .item {
+	-webkit-transition: opacity ease-in-out 5s;
+	-moz-transition: opacity ease-in-out 5s;
+	-o-transition: opacity ease-in-out 5s;
+	transition: opacity ease-in-out 5s;
 }
-
-.container {
-	/*display: flex;
-	flex-wrap: wrap;
-	height: 100%;
-	margin-top: 50em;*/
+/*
+.carousel-fade .active.left,
+.carousel-fade .active.right {
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	filter: alpha(opacity = 0);
 }
 
 #carousel {
 	font-family: 'Arial', sans-serif;
 	letter-spacing: 0.07em;
 }
-
+*/
 .modal-content {
 	background-color: black;
 }
@@ -170,9 +193,9 @@ footer p {
 			background: url(StringX-Background.jpg) no-repeat center center;
 		}
 
-		#carousel h5, h6{
+/*		#carousel h5, h6{
 			font-size: 4em;
-		}
+		}*/
 	}
 
 }
@@ -191,7 +214,43 @@ footer p {
 		font-size: 6em;
 	}
 
-	#carousel h5, h6{
+/*	#carousel h5, h6{
 		font-size: 4em;
-	}
+	}*/
 }
+
+
+
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+  max-height: 35vh;
+}
+
