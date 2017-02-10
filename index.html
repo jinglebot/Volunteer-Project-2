@@ -5,10 +5,12 @@
 	<title>StringX Herrera</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Special+Elite|Alex+Brush|Sancreek|Allura&effect=fragile" rel="stylesheet">
-<!-- 	<link href="https://fonts.googleapis.com/css?family=Special+Elite|Alex+Brush|Rye|Sancreek|Cedarville+Cursive|Mrs+Saint+Delafield|Allura&effect=fragile" rel="stylesheet"> -->
-	<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/bootstrap-cyborg.min.css">
+	<link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700|UnifrakturMaguntia&effect=static|3d-float&text=String%20X%20voices%20of" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ruthie&effect=shadow-multiple|neon" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Tangerine|Special+Elite" rel="stylesheet"> -->
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap-cyborg.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -16,44 +18,42 @@
 
 	<!-- Navbar Top -->
 	<nav class="navbar navbar-inverse navbar-fixed-top navbar-transparent">
-	  <div class="container-fluid">
+		<div class="container-fluid">
 
-	  	<!-- Hamburger icon -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	    </div>
+		  	<!-- Hamburger icon -->
+		    <div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+		    </div>
 
-	    <!-- Left Nav -->
-	    <div class="collapse navbar-collapse" id="navbar-main">
-	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">About</a></li>
-	        <li class="dropdown">
-	          <a href="#" id="songs" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-	          	Songs <span class="caret"></span></a>
-	          <ul class="dropdown-menu" role="menu" data-bind="foreach: songsArray">
-	          	<li>
-	          		<a data-toggle="modal" data-bind="text: title, attr: { 'data-target': songNum }"></a>
-	          		<div class="divider"></div>
-	          	</li>
-	          </ul>
-	        </li>
-	      </ul>
+		    <!-- Left Nav -->
+		    <div class="collapse navbar-collapse" id="navbar-main">
+				<ul class="nav navbar-nav">
+					<li><a style="font-family: 'UnifrakturMaguntia', cursive; font-size: 1.3em; color: white">string<big  style="font-family: 'UnifrakturCook', cursive; color: maroon; vertical-align: bottom">X</big></a></li>
+					<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+					<li><a href="#" data-toggle="modal" data-target="#about">About</a></li>
+					<li class="dropdown"><a href="#" id="songs" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Songs <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu" data-bind="foreach: songsArray">
+							<li><a data-toggle="modal" data-bind="text: title, attr: { 'data-target': songNum }"></a>
+								<div class="divider"></div>
+							</li>
+						</ul>
+					</li>
+				</ul>
 
-	      <!-- Right Nav -->
-	      <ul class="nav navbar-nav navbar-right">
-			<li><a href="(123) 456-7890" role="button"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a></li>
-	        <li><a href="StringX Herrera" role="button"><span><i class="fa fa-facebook"></i></span></a></li>
-	        <li><a href="#" role="button"><span><i class="fa fa-twitter"></i></span></a></li>
-	        <li><a href="stringxherrera@yahoo.com" role="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
-	        <li><a href="stringxherrera@yahoo.com" role="button"><img src="images/Myspace_2012_icon.png" role="button" style="height: 1.5em" aria-hidden="true"></a></li>
-	      </ul>
-	    </div>
-	  </div>
+				<!-- Right Nav -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="(650) 219-6585" role="button"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a></li>
+					<li><a href="StringX Herrera" role="button"><span><i class="fa fa-facebook"></i></span></a></li>
+					<li><a href="#" role="button"><span><i class="fa fa-twitter"></i></span></a></li>
+					<li><a href="mailto:stringxherrera@yahoo.com" role="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+					<li><a href="https://myspace.com/johnhpo1/music/songs" role="button"><img src="images/Myspace_2012_icon.png" role="button" style="height: 1.5em" aria-hidden="true"></a></li>
+				</ul>
+			</div>
+		</div>
 	</nav>
 	<!-- Navbar Top -->
 
@@ -63,193 +63,180 @@
 		<!-- Jumbotron -->
 		<div class="jumbotron bgimg text-center">
 
-			<!-- <h1 class= "title ">String X</h1> -->
-			<span><img class="img-responsive" src="images/stringx_white.png" alt="String X logo" style="height: 40vh; margin: 0 auto"></span>
+			<!-- Title Logo -->
+			<h1  class="font-effect-3d-float" style="margin: 1em auto">
+				<a class= "title " style="font-family: 'UnifrakturMaguntia', cursive; color: white; font-size: 2.5em">string</a><a  style="font-family: 'UnifrakturCook', cursive; letter-spacing: 0.1em; color: maroon; font-size: 3em; vertical-align: top">X</a>
+			</h1>
 
-			<!-- Theme -->
-			<div style="height: 75vh">
-				<h1><small style="font-family: 'Sancreek', cursive; color: red">VOICES OF</small><b  style="font-family: 'Alex Brush', cursive; letter-spacing: 0.1em; color: white" class="font-effect-fragile" > Silence</b></h1>
+			<!-- Album Logo-->
+			<div style="height: 70vh">
+				<h2 class="font-effect-neon">
+					<small style="font-family: 'UnifrakturMaguntia', cursive; color: maroon">voices of</small>
+					<a  style="font-family: 'Ruthie', cursive; font-size: 1.2em; letter-spacing: 0.05em; color: white"> Silence</a>
+				</h2>
 
-			<!-- Carousel -->
-			<!-- Based on the bootstrap carousel fade snippet from http://www.bootply.com/yWdXuJFqhF -->
-			<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<!-- Carousel -->
+				<!-- Based on the bootstrap carousel fade snippet from http://www.bootply.com/yWdXuJFqhF -->
+				<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
 
-				<!-- Indicators	 -->
-			  <ol class="carousel-indicators" style="bottom: -10em">
-			  <!-- <ol class="carousel-indicators"> -->
-			    <li data-target="#carousel" class="active" data-slide-to= "0"></li>
-				<!-- ko foreach: songsArray -->
-			    <li data-target="#carousel" data-bind="attr: {'data-slide-to': $index}"></li>
-				<!-- /ko -->
-			  </ol>
+					<!-- Indicators	 -->
+					<ol class="carousel-indicators" style="bottom: -5em">
+						<!-- <ol class="carousel-indicators"> -->
+						<li data-target="#carousel" class="active" data-slide-to= "0"></li>
+						<!-- ko foreach: songsArray -->
+						<li data-target="#carousel" data-bind="attr: {'data-slide-to': $index}"></li>
+						<!-- /ko -->
+					</ol>
 
-			  <!-- Items -->
-			  <div class="carousel-inner">
-				<div class="item active" data-bind="with: songsArray()[0]">
-					<div data-toggle="modal" data-bind= "attr: {'data-target': songNum}"> <!-- attr bindings won't work if in same div as with binding -->
-						<h3 style="font-family: 'Special Elite', regular; letter-spacing: 0.1em; color: white" data-bind="text: title"></h3>
-				  		<p><em style="font-family: 'Allura', cursive; letter-spacing: 0.1em; color: white" data-bind="text: verse"></em></p>
-				  		<!-- <p><em data-bind="text: verse"></em></p> -->
-				  		<p><small data-bind="text: author"></small></p>
-				  		<div>
-					  		<small data-bind="text: location"></small>, <small data-bind="text: year"></small>
-				  		</div>
-				  	</div>
-				</div>
-				<!-- ko foreach: songsArray -->
-				<div class="item" data-toggle="modal" data-bind="attr: {'data-target': songNum}">
-					<h3 style="font-family: 'Special Elite', regular; letter-spacing: 0.1em; color: white" data-bind="text: title"></h3>
-			  		<p><em style="font-family: 'Allura', cursive; letter-spacing: 0.1em; color: white" data-bind="text: verse"></em></p>
-					<!-- <p><em data-bind="text: verse"></em></p> -->
-			  		<p><small data-bind="text: author"></small></p>
-			  		<div>
-				  		<small data-bind="text: location"></small>, <small data-bind="text: year"></small>
-			  		</div>
-				</div>
-				<!-- /ko -->
-			  </div>
+					<!-- Items -->
+					<div class="carousel-inner">
+						<div class="item active" data-bind="with: songsArray()[6]">
+							<div data-toggle="modal" data-bind= "attr: {'data-target': songNum}"> <!-- attr bindings won't work if in same div as with binding -->
+								<h3 style="font-family: 'IM Fell English SC', serif; letter-spacing: 0.1em; color: white; text-shadow: 4px 4px 4px #aaa" data-bind="text: title"></h3>
+								<p style="font-family: 'Ruthie', cursive; letter-spacing: 0.1em; color: white" data-bind="text: verse"></p>
+								<div><small data-bind="text: author"></small></div>
+								<div><small data-bind="text: location"></small>, <small data-bind="text: year"></small></div>
+							</div>
+						</div>
+						<!-- ko foreach: songsArray -->
+						<div class="item" data-toggle="modal" data-bind="attr: {'data-target': songNum}">
+							<h3 style="font-family: 'IM Fell English SC', serif; letter-spacing: 0.1em; color: white; text-shadow: 4px 4px 4px #aaa" data-bind="text: title"></h3>
+							<p style="font-family: 'Ruthie', cursive; letter-spacing: 0.1em; color: white" data-bind="text: verse"></p>
+							<div><small data-bind="text: author"></small></div>
+							<div><small data-bind="text: location"></small>, <small data-bind="text: year"></small></div>
+						</div>
+						<!-- /ko -->
+					</div>
 
-			  <!-- Controls -->
-			  <a class="carousel-control left" href="#carousel" data-slide="prev"><h2><</h2></a>
-			  <a class="carousel-control right" href="#carousel" data-slide="next"><h2>></h2></a>
+					<!-- Controls -->
+					<a class="carousel-control left" href="#carousel" data-slide="prev"><h2></h2></a>
+					<a class="carousel-control right" href="#carousel" data-slide="next"><h2></h2></a>
 
-			</div>
-		</div> <!-- Carousel -->
+				</div> <!-- Carousel -->
+			</div> <!-- Album Logo -->
+		</div> <!-- Jumbotron -->
 
-	</div> <!-- Jumbotron -->
-
-		<div class="text-center"> <!-- Screen Filler -->
-
-			<h1 style="font-family: 'Allura', cursive; letter-spacing: 0.1em; color: white; margin: 2.5em 2.5em">love the music</h1>
-
+		<!-- Screen Filler -->
+		<div class="text-center">
+			<h1 style="font-family: 'Ruthie', cursive; letter-spacing: 0.1em; color: white; margin: 3em 2em auto">love the music</h1>
 		</div> <!-- Screen Filler -->
 
 	</div> <!-- Main screen -->
 
-
 	<!-- Second Screen -->
-	<!-- Songs -->
-	 <div class="container">
+	<div class="container">
 
- 	 	<!-- Song Album pictures -->
-<!-- 	 	<div class="well col-md-5 col-md-offset-1">
-	 		<img class="img-responsive" src="images/Twisted-Scenery-pic.jpg" srcset="images/Twisted-Scenery-pic.jpg 1024w" sizes="50vw" alt="Song 1">
-		</div>
- -->
-
- 		<!-- Song List -->
- 		<!-- TODO: make it a table -->
- 		<!-- <tbody>
-		    <tr>
-		      <td>1</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		    </tr>
- 		</tbody> -->
- 		<div>
- 	<!-- <div class= "table-responsive"> -->
- 		<!-- <table class="table table-bordered table-hover"> -->
-
-
- 		<!-- <div class="text-center"> -->
-			<div class= "row" data-bind="foreach: songsArray">
-				<div class="col-sm-3 col-md-3 col-lg-3" style= "display: inline-block; margin: 1.25em">
- 						<!-- <img class="img-responsive" src="images/vinyl-disc-record.png" srcset="images/vinyl-disc-record.png 1024w" sizes="33vw" data-bind="attr: { 'alt': songId }"> -->
- 					<div data-toggle="modal"  data-bind="attr: { 'data-target': songNum }" style= "background: url(images/vinyl-disc-record.png) no-repeat center center; background-size: contain; min-height: 250px; min-width: 250px; padding: 2.25em">
- 						<h3 style="text-align: center"><b class="text-uppercase" data-bind="text: title" style="color: red"></b></h3>
- 					</div>
+		<!-- Song List -->
+		<div class= "row" data-bind="foreach: songsArray" >
+			<div class="col-sm-12 col-md-12 col-lg-3" style= "display: inline-block; margin: 4em auto">
+				<div data-toggle="modal"  data-bind="attr: { 'data-target': songNum }" style= "background: url(images/vinyl-disc-record.png) no-repeat center center; background-size: contain; min-height: 150px; min-width: 150px; padding: 2.25em">
+					<h4 style="text-align: center; vertical-align: middle">
+						<b data-bind="text: title" style="font-family: 'IM Fell English SC', serif; color: maroon"></b>
+					</h4>
 				</div>
 			</div>
-		<!-- </table> -->
-	</div> <!-- Song List -->
+		</div> <!-- Song List -->
 
-<!--  	<div class= "table-responsive">
- 		<table class="table table-bordered table-hover">
- -->
+	</div> <!-- Second Screen -->
 
- 		<!-- <div class="text-center">
-			<tbody data-bind="foreach: songsArray">
-				<tr>
- 					<td data-toggle="modal"  data-bind="attr: { 'data-target': songNum }">
- 						<img class="img-responsive" src="images/vinyl-disc-record.png" srcset="images/vinyl-disc-record.png 1024w" sizes="33vw" data-bind="attr: { 'alt': songId }">
- 						<b data-bind="text: title"></b>
- 					</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>  Song List -->
-
+	<!-- Bottom -->
+	<div class="container">
 
 		<!-- Footer -->
-		<div class="container">
-			<footer>
-				<div class="row">
-					<div class="col-lg-12">
-						<!-- Social Media -->
-			            <ul class="list-unstyled">
-			              <li class="pull-right"><a href="#top">Back to top</a></li>
-			              <li><a href="#">Phone</a></li>
-			              <li><a href="#">Phone</a></li>
-			              <li><a href="https://twitter.com/stringX">Twitter</a></li>
-			              <li><a href="#">Facebook</a></li>
-			              <li><a href="#">Myspace</a></li>
-			              <li><a href="#">Email</a></li>
-			            </ul>
-			            <div>
-				            <p>StringX: John Herrera (Vocals, Guitars, Keyboards, Songwriter)</p>
-				            <p>Harry Herrera (Guitars, Songwriter)</p>
-				            <p>Produced by StringX and Brian Irwin</p>
-				        </div><br>
-				        <div>
-			            <p>Made by <a href="http://mariacristinasales.com" rel="nofollow">@jinglebot</a>. Contact her at <a href="mailto:jingle1216@yahoo.com">jingle1216@bootswatch.com</a>.</p>
+		<footer>
+			<div class="row">
+				<div class="col-sm-4 col-md-4 col-lg-12">
+					<!-- Social Media -->
+		            <ul class="list-unstyled">
+						<li class="pull-right"><a href="#top">Back to top</a></li>
+						<li><a href="(650)219-6585">Phone</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="StringX Herrera">Facebook</a></li>
+						<li><a href="https://myspace.com/johnhpo1/music/songs">Myspace</a></li>
+						<li><a href="mailto:stringxherrera@yahoo.com">Email</a></li>
+		            </ul>
+		            <div>
+			            <p>StringX: </p>
+			            <p>John Herrera: Lead and Rhythm Guitars, Keyboards, Lead Vocals, Song writer, Producer and Manager</p>
+			            <p>Harry Herrera: Lead and Rhythm Guitars, Song writer, Producer and Manager</p>
+			        </div>
+			        <br>
+			        <div>
+			            <p>Musical Direction and Production: </p>
+			            <p>Brian Irwin: Drums, Percussion, Bass, Background Vocals, Percussion and Producer</p>
+			        </div>
+			        <br>
+			        <div>
+			            <p>Guest Artists: </p>
+			            <p>Alfred Esquer: Piano on “Art of the Gun”</p>
+			            <p>Matt Schaefer: Flute on “It’s you”</p>
+			        </div>
+			        <br>
+			        <div>
+			            <p>Made by <a href="https://www.linkedin.com/in/mariacristinasales" rel="nofollow">Maria Cristina Sales-An</a>. Contact her at <a href="mailto:jingle1216@yahoo.com">@jinglebot</a>.</p>
 			            <p>Code released under the <a href="https://github.com/@jinglebot/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
-			            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a> and <a href="http://www.clipartkid.com/" rel="nofollow">Clipart Kid</a>. Open source from <a href="https://github.com/jinglebot/StringX/" rel="nofollow">GitHub</a>. </p> </div>
+			            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a> and <a href="http://www.clipartkid.com/" rel="nofollow">Clipart Kid</a>. Open source from <a href="https://github.com/jinglebot/StringX/" rel="nofollow">GitHub</a>. </p>
+			        </div>
+		 		</div>
+			</div>
+		</footer> <!-- Footer -->
 
-			 		</div>
+	</div> <!-- Bottom -->
+
+	<!-- Modal Model -->
+	<div data-bind="foreach: songsArray">
+		<div class="modal fade" data-bind="attr:{'id': songId}" tabindex="-1" role="dialog" aria-labelledby="AboutModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="AboutModalLabel" data-bind="text: title" style="font-weight: bold; text-align: center; text-shadow: 4px 4px 4px #aaa"></h4>
+					</div>
+					<div class="modal-body">
+						<figure>
+							<a role="button" href="https://myspace.com/johnhpo1/music/song/dead-on-arrival-2-92019215-102042664">
+		  						<img class="img-responsive" src="imgs/Twisted-Scenery-pic-sm.jpg" srcset="images/Twisted-Scenery-pic.jpg 1024w" sizes="60vw" data-bind="attr:{'alt': songId}">
+		  						<h3>PLAY SONG</h3>
+							</a>
+						</figure>
+						</br>
+		  				<p>Created by <i data-bind="text: author"></i></p>
+		  				<p><i data-bind="text: location"></i>, <i data-bind="text: year"></i></p>
+		  				<p data-bind="text: verse"></p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
 				</div>
-			</footer>
-		</div> <!-- Footer -->
+			</div>
+		</div>
+	</div> <!-- Modal Model -->
 
-	 </div> <!-- Songs -->
+    <!-- Modal About -->
+    <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="AboutModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"><a style="font-family: 'UnifrakturMaguntia', cursive; font-size: 1.5em; color: white" class="font-effect-3d-float">string<big  style="font-family: 'UnifrakturCook', cursive; color: maroon; vertical-align: bottom">X</big></a></h4>
+				</div>
+				<div class="modal-body">
+					<p>❉ StringX was created in 1994 by John and Harry Herrera.</p>
+					<p>Both John and Harry started as classical guitarists and with time have expanded their roles to include song writing, producing and both are involved in the management of the band. StringX was created with the intention to reach those who enjoy music with message, and enjoy musical challenges that transcend time and subject matter.</p>
+					<p>We are hopeful that you will find in time that we have been influenced by a vast array of musical tastes, ranging from pure rock and roll, to Latin and African rhythms, to punk, progressive, modern, and traditional styles.</p>
+					<p>The band has worked extensively for the last few years with producer Brian Irwin and most recently with producer Justus Dobrin to record the catalog of songs that shows the growth in scope and vision since the band’s inception.</p>
+					<p>The band is hopeful that the band’s own website is up and running in the near future and complete recording all songs in the catalog. Once this is completed we look forward to get a full touring band together to bring the songs close to those that appreciate our music and our approach to musical and visual art.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+    </div> <!-- Modal About -->
 
-
-	 <!-- Modal Model -->
-	 	<div data-bind="foreach: songsArray">
-			<div class="modal fade" data-bind="attr:{'id': songId}" tabindex="-1" role="dialog" aria-labelledby="AboutModalLabel" aria-hidden="true">
-      			<div class="modal-dialog">
-        			<div class="modal-content">
-          				<div class="modal-header">
-            				<h4 class="modal-title" id="AboutModalLabel" data-bind="text: title" style="font-weight: bold"></h4>
-          				</div>
-          				<div class="modal-body">
-            				<figure><a  role="button" href="https://myspace.com/johnhpo1/music/song/dead-on-arrival-2-92019215-102042664">
-              					<img class="img-responsive" src="imgs/Twisted-Scenery-pic-sm.jpg" srcset="images/Twisted-Scenery-pic.jpg 1024w" sizes="100vw" data-bind="attr:{'alt': songId}">
-              					<h2 class= "rotate">PLAY ME</h2>
-            				</a></figure>
-            			</br>
-              				<p>Created by <i data-bind="text: author"></i></p>
-              				<p><i data-bind="text: location"></i>, <i data-bind="text: year"></i></p>
-              				<p data-bind="text: reflection"></p>
-          				</div>
-          				<div class="modal-footer">
-            				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          				</div>
-        			</div>
-      			</div>
-    		</div>
-    	</div>
-
-
-
-	<!-- // <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/libs/jQuery.js"></script>
     <script src="js/libs/knockout-3.4.0.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script src="js/libs/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
- 	<script>
- 	</script>
 </body>
 </html>

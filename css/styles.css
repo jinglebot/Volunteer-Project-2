@@ -16,9 +16,17 @@
 /*modal modal-content*/
 /*playlist style or single track record style*/
 
-
-
 /*general style*/
+body,
+.modal-title {
+	font-family: 'IM Fell English SC', serif;
+	/*font-family: 'Special Elite', regular;*/
+}
+
+.modal-title {
+	font-weight: bold;
+	text-shadow: 4px 4px 4px #aaa;
+}
 
 /*jumbotron*/
 .bgimg {
@@ -29,36 +37,32 @@
 	height: 100vh;
 }
 
-h1 {
-	font-weight: 700;
-	/*font-style: italic;*/
-}
-
-div h4 {
-	font-size: 1.5em;
-}
-
 .carousel {
 	padding: 1em;
 }
 
+/*body*/
 #home {
 	padding-top:0;
 }
 
-#home .navbar-brand {
+/*#home .navbar-brand {
 	padding:13.5px 15px 12.5px;
 }
-
-#home .navbar-brand>img {
+*/
+/*#home .navbar-brand>img {
 	display:inline;
 	margin:0 10px;
 	height:100%;
 }
-
+*/
 li {
 	/*float: left;*/
 	margin-right: 1.5em;
+}
+
+#navlogo {
+	display: none;
 }
 
 .modal-body figure img {
@@ -66,15 +70,16 @@ li {
 	width: 100%;
 }
 
-.modal-body figure h2 {
+.modal-body figure h3 {
 	position: absolute;
 	top: 3em;
 	left: 0;
 	width: 100%;
 	text-align: center;
+	opacity: 0.5;
 }
 
-.rotate {
+/*.rotate {
 	transform: rotate(-40deg);
 	transform-origin: left bottom 10;
 }
@@ -87,13 +92,13 @@ li {
 }
 
 
-/*.carousel-fade .item {
+.carousel-fade .item {
 	-webkit-transition: opacity ease-in-out 5s;
 	-moz-transition: opacity ease-in-out 5s;
 	-o-transition: opacity ease-in-out 5s;
 	transition: opacity ease-in-out 5s;
 }
-/*
+
 .carousel-fade .active.left,
 .carousel-fade .active.right {
 	left: 0;
@@ -108,7 +113,7 @@ li {
 }
 */
 .modal-content {
-	background-color: black;
+	background-color: whitesmoke;
 }
 
 footer {
@@ -130,7 +135,7 @@ footer p {
 
 	.bgimg {
 		background-size: contain;
-		background: url(Twisted-Scenery-pic-md.jpg) no-repeat center center;
+		/*background: url(Twisted-Scenery-pic-md.jpg) no-repeat center center;*/
 	}
 }
 
@@ -141,7 +146,7 @@ footer p {
 		background-color: black;
 		color: whitesmoke;
 		height: 100vh;
-		background: url(StringX-Background-md.jpg) no-repeat center center;
+		/*background: url(StringX-Background-md.jpg) no-repeat center center;*/
 	}
 
 	@media screen and (orientation: portrait) {
@@ -153,9 +158,20 @@ footer p {
 	}
 }
 
+@media screen and (min-width: 765px) {
+
+	#navlogo {
+		display: block;
+	}
+}
+
 @media screen and (min-width: 1000px) {
 	body>.navbar-transparent {
 		background-color:transparent;
+	}
+
+	body>.navbar-inverse {
+		border-color:transparent;
 	}
 
 	body>.navbar-transparent .navbar-nav>.open>a {
@@ -167,7 +183,7 @@ footer p {
 		background-color: black;
 		color: whitesmoke;
 		height: 100vh;
-		background: url(StringX-Background-md.jpg) no-repeat center center;
+		/*background: url(StringX-Background-md.jpg) no-repeat center center;*/
 	}
 }
 
@@ -178,19 +194,19 @@ footer p {
 		background-color: black;
 		color: whitesmoke;
 		height: 100vh;
-		background: url(StringX-Background-lg.jpg) no-repeat center center;
+		/*background: url(StringX-Background-lg.jpg) no-repeat center center;*/
 	}
 
-	div h4 {
+/*	div h4 {
 		font-size: 4em;
 	}
-
+*/
 
 	@media screen and (orientation: portrait) {
 
 		.bgimg {
 			background-size: contain;
-			background: url(StringX-Background.jpg) no-repeat center center;
+			/*background: url(StringX-Background.jpg) no-repeat center center;*/
 		}
 
 /*		#carousel h5, h6{
@@ -207,7 +223,7 @@ footer p {
 		background-color: black;
 		color: whitesmoke;
 		height: 100vh;
-		background: url(Twisted-Scenery-pic.jpg) no-repeat center center;
+		/*background: url(Twisted-Scenery-pic.jpg) no-repeat center center;*/
 	}
 
 	div h4 {
