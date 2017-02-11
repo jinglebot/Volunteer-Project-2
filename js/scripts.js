@@ -102,35 +102,58 @@ var songs = [{
 	}];
 
 
+var contactInfo = [{
+	medium: "Phone",
+	link: "tel:+16502196585",
+	icon: "glyphicon glyphicon-earphone"
+	}, {
+	medium: "Email",
+	link: "mailto:stringxherrera@yahoo.com",
+	icon: "glyphicon glyphicon-envelope"
+	}, {
+	medium: "Facebook",
+	link: "https://www.facebook.com/stringx",
+	icon: "fa fa-facebook"
+	}, {
+	medium: "Twitter",
+	link: "#",
+	icon: "fa fa-twitter"
+	}, {
+	medium: "Myspace",
+	link: "https://myspace.com/johnhpo1/music/songs",
+	icon: "glyphicon glyphicon-option-horizontal"
+	}];
+
 // VIEWMODEL
 var Viewmodel = function () {
 	var self = this;
+
 	this.songsArray = ko.observableArray([]);
 	songs.forEach(function(song) {
 		self.songsArray.push(song);
 	});
 	console.log(self.songsArray());
 
-    this.carouselList = ko.computed(function() {
-        return ko.utils.arrayFilter(self.songsArray(), function(song) {
-            return song;
-        });
-    });
+	this.contactsArray = ko.observableArray([]);
+	contactInfo.forEach(function(contact) {
+		self.contactsArray.push(contact);
+	});
+	console.log(self.contactsArray());
+
+ //    this.carouselList = ko.computed(function() {
+ //        return ko.utils.arrayFilter(self.songsArray(), function(song) {
+ //            return song;
+ //        });
+	// });
 
 	$('.carousel-indicators li').addClass('active');
 	$('.carousel-inner div div').addClass('active');
 
+	// this.navSongList = ko.computed(function() {
+	// 	return ko.utils.arrayFilter(self.songsArray(), function(song) {
+	// 	});
+	// });
 
-
-
-
-	this.navSongList = ko.computed(function () {
-		return ko.utils.arrayFilter(self.songsArray(), function (song) {
-
-
-
-		});
-	});
 };
 
 ko.applyBindings(new Viewmodel());

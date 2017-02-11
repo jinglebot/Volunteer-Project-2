@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Ruthie&effect=shadow-multiple|neon" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Tangerine|Special+Elite" rel="stylesheet"> -->
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-cyborg.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -27,35 +27,38 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-		    </div>
+		    </div> <!-- Hamburger icon -->
 
-		    <!-- Left Nav -->
+		    <!-- Nav Icons -->
 		    <div class="collapse navbar-collapse" id="navbar-main">
+
+		    	<!-- Left Nav -->
 				<ul class="nav navbar-nav">
 					<li><a style="font-family: 'UnifrakturMaguntia', cursive; font-size: 1.3em; color: white">string<big  style="font-family: 'UnifrakturCook', cursive; color: maroon; vertical-align: bottom">X</big></a></li>
 					<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-					<li><a href="#" data-toggle="modal" data-target="#about">About</a></li>
-					<li class="dropdown"><a href="#" id="songs" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Songs <span class="caret"></span></a>
+					<li><a data-toggle="modal" data-target="#about">About</a></li>
+					<li class="dropdown"><a id="songs" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Songs <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu" data-bind="foreach: songsArray">
 							<li><a data-toggle="modal" data-bind="text: title, attr: { 'data-target': songNum }"></a>
 								<div class="divider"></div>
 							</li>
 						</ul>
 					</li>
-				</ul>
+				</ul> <!-- Left Nav -->
 
 				<!-- Right Nav -->
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="(650)219-6585" role="button"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a></li>
-					<li><a href="StringX Herrera" role="button"><span><i class="fa fa-facebook"></i></span></a></li>
-					<li><a href="#" role="button"><span><i class="fa fa-twitter"></i></span></a></li>
-					<li><a href="mailto:stringxherrera@yahoo.com" role="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
-					<li><a href="https://myspace.com/johnhpo1/music/songs" role="button"><img src="images/myspace.png" role="button" style="height: 1.5em" aria-hidden="true"></a></li>
-				</ul>
-			</div>
+				<ul class="nav navbar-nav navbar-right" data-bind="foreach: contactsArray">
+					<li>
+						<a role="button" data-bind="attr: { 'href': link }">
+							<span data-bind="attr: { 'class': icon }" aria-hidden="true"></span>
+						</a>
+					</li>
+				</ul> <!-- Right Nav -->
+
+			</div> <!-- Nav Icons -->
+
 		</div>
-	</nav>
-	<!-- Navbar Top -->
+	</nav> <!-- Navbar Top -->
 
 	<!-- Main Screen -->
 	<div class="splash" style="background position: 0 0;">
@@ -109,8 +112,8 @@
 					</div>
 
 					<!-- Controls -->
-					<a class="carousel-control left" href="#carousel" data-slide="prev"><h2></h2></a>
-					<a class="carousel-control right" href="#carousel" data-slide="next"><h2></h2></a>
+					<a class="carousel-control left" href="#carousel" data-slide="prev"><h2>.</h2></a>
+					<a class="carousel-control right" href="#carousel" data-slide="next"><h2>.</h2></a>
 
 				</div> <!-- Carousel -->
 			</div> <!-- Album Logo -->
@@ -149,11 +152,9 @@
 					<!-- Social Media -->
 		            <ul class="list-unstyled">
 						<li class="pull-right"><a href="#top">Back to top</a></li>
-						<li><a href="(650)219-6585">Phone</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="StringX Herrera">Facebook</a></li>
-						<li><a href="https://myspace.com/johnhpo1/music/songs">Myspace</a></li>
-						<li><a href="mailto:stringxherrera@yahoo.com">Email</a></li>
+					</ul>
+		            <ul class="list-unstyled" data-bind="foreach: contactsArray">
+						<li><a data-bind="text: medium, attr: { 'href': link}"></a></li>
 		            </ul>
 		            <div>
 			            <p>StringX: </p>
@@ -173,9 +174,8 @@
 			        </div>
 			        <br>
 			        <div>
-			            <p>Made by <a href="https://www.linkedin.com/in/mariacristinasales" rel="nofollow">Maria Cristina Sales-An</a>. Contact her at <a href="mailto:jingle1216@yahoo.com">@jinglebot</a>.</p>
-			            <p>Code released under the <a href="https://github.com/@jinglebot/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
-			            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a> and <a href="http://www.clipartkid.com/" rel="nofollow">Clipart Kid</a>. Open source from <a href="https://github.com/jinglebot/StringX/" rel="nofollow">GitHub</a>. </p>
+			            <p>Made by <a href="https://www.linkedin.com/in/mariacristinasales" rel="nofollow">@jinglebot</a>. Contact her at <a href="mailto:jingle1216@yahoo.com">jinglebot-Email</a> or <a href="https://github.com/jinglebot/" rel="nofollow">jinglebot-GitHub</a>.</p>
+			            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a> and <a href="http://www.clipartkid.com/" rel="nofollow">Clipart Kid</a>.</p>
 			        </div>
 		 		</div>
 			</div>
@@ -189,6 +189,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<h4 class="modal-title" id="AboutModalLabel" data-bind="text: title" style="font-weight: bold; text-align: center; text-shadow: 4px 4px 4px #aaa"></h4>
 					</div>
 					<div class="modal-body">
@@ -216,6 +217,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<h4 class="modal-title"><a style="font-family: 'UnifrakturMaguntia', cursive; font-size: 1.5em; color: white" class="font-effect-3d-float">string<big  style="font-family: 'UnifrakturCook', cursive; color: maroon; vertical-align: bottom">X</big></a></h4>
 				</div>
 				<div class="modal-body">
@@ -232,11 +234,10 @@
 		</div>
     </div> <!-- Modal About -->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/libs/jQuery.js"></script>
     <script src="js/libs/knockout-3.4.0.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>

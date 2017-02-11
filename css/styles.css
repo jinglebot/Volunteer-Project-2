@@ -16,23 +16,31 @@
 /*modal modal-content*/
 /*playlist style or single track record style*/
 /*contact info json format, input format*/
+/*myspace icon for data-bind*/
+/*modal not working*/
+/*twitter account*/
 /*publish*/
 
 
 /*general style*/
-body,
-.modal-title {
+body {
 	font-family: 'IM Fell English SC', serif;
 	/*font-family: 'Special Elite', regular;*/
 }
 
+/*Jumbotron*/
+.bgimg {
+	background: url(StringX-Background-lg.jpg) no-repeat center center;
+	background-size: cover;
+	background-color: black;
+	color: whitesmoke;
+	height: 100vh;
+}
+
+/*Modal*/
 .modal-title {
 	font-weight: bold;
 	text-shadow: 4px 4px 4px #aaa;
-}
-
-.modal-content {
-	background-color: black;
 }
 
 .modal-body figure img {
@@ -49,23 +57,51 @@ body,
 	opacity: 0.35;
 }
 
-/*jumbotron*/
-.bgimg {
-	background: url(StringX-Background-sm.jpg) no-repeat center center;
-	background-size: cover;
-	background-color: black;
-	color: whitesmoke;
-	height: 100vh;
+
+/*###################################################################################*/
+
+@media screen and (orientation: portrait) {
+
+	.bgimg {
+		background-size: cover;
+		/*background: url(Twisted-Scenery-pic-md.jpg) no-repeat center center;*/
+	}
 }
 
-.carousel {
-	padding: 1em;
+/*@media screen and (min-width: 650px) {
+
+	.bgimg {
+		background-size: cover;
+		background-color: black;
+		color: whitesmoke;
+		height: 100vh;
+		background: url(StringX-Background-md.jpg) no-repeat center center;
+	}
+
+	@media screen and (orientation: portrait) {
+
+		.bgimg {
+			background-size: contain;
+			background: url(Twisted-Scenery-pic-lg.jpg) no-repeat center center;
+		}
+	}
 }
+
+*/
+
+/*###################################################################################*/
+
 
 /*body*/
-#home {
+/*#home {
 	padding-top:0;
 }
+*/
+
+/*.carousel {
+	padding: 1em;
+}
+*/
 
 /*#home .navbar-brand {
 	padding:13.5px 15px 12.5px;
@@ -135,41 +171,14 @@ footer p {
 	margin-bottom: 0;
 }
 
-@media screen and (orientation: portrait) {
-
-	.bgimg {
-		background-size: contain;
-		/*background: url(Twisted-Scenery-pic-md.jpg) no-repeat center center;*/
-	}
-}
-
-@media screen and (min-width: 650px) {
-
-	.bgimg {
-		background-size: cover;
-		background-color: black;
-		color: whitesmoke;
-		height: 100vh;
-		/*background: url(StringX-Background-md.jpg) no-repeat center center;*/
-	}
-
-	@media screen and (orientation: portrait) {
-
-		.bgimg {
-			background-size: contain;
-			background: url(Twisted-Scenery-pic-lg.jpg) no-repeat center center;
-		}
-	}
-}
-
-@media screen and (min-width: 765px) {
+/*@media screen and (min-width: 765px) {
 
 	#navlogo {
 		display: block;
 	}
-}
+}*/
 
-@media screen and (min-width: 1000px) {
+/*@media screen and (min-width: 1000px) {
 	body>.navbar-transparent {
 		background-color:transparent;
 	}
@@ -187,47 +196,47 @@ footer p {
 		background-color: black;
 		color: whitesmoke;
 		height: 100vh;
-		/*background: url(StringX-Background-md.jpg) no-repeat center center;*/
+		/*background: url(StringX-Background-md.jpg) no-repeat center center;
 	}
 }
-
-@media screen and (min-width: 1500px) {
+*/
+/*@media screen and (min-width: 1500px) {
 
 	.bgimg {
 		background-size: cover;
 		background-color: black;
 		color: whitesmoke;
 		height: 100vh;
-		/*background: url(StringX-Background-lg.jpg) no-repeat center center;*/
+		/*background: url(StringX-Background-lg.jpg) no-repeat center center;
 	}
 
-/*	div h4 {
+	div h4 {
 		font-size: 4em;
 	}
-*/
+
 
 	@media screen and (orientation: portrait) {
 
 		.bgimg {
 			background-size: contain;
-			/*background: url(StringX-Background.jpg) no-repeat center center;*/
+			background: url(StringX-Background.jpg) no-repeat center center;
 		}
 
 /*		#carousel h5, h6{
 			font-size: 4em;
-		}*/
+		}
 	}
 
 }
 
-@media screen and (min-width: 2000px) {
+*//*@media screen and (min-width: 2000px) {
 
 	.bgimg {
 		background-size: cover;
 		background-color: black;
 		color: whitesmoke;
 		height: 100vh;
-		/*background: url(Twisted-Scenery-pic.jpg) no-repeat center center;*/
+		background: url(Twisted-Scenery-pic.jpg) no-repeat center center;
 	}
 
 	div h4 {
@@ -236,10 +245,10 @@ footer p {
 
 /*	#carousel h5, h6{
 		font-size: 4em;
-	}*/
+	}
 }
 
-
+*/
 
 
 .carousel-fade .carousel-inner .item {
