@@ -7,7 +7,7 @@
 /*nav bar*/
 /*nav bar transparent*/
 /*footer*/
-/*mvvm format*/
+/*mvc format*/
 /*song list modal*/
 /*knockout model*/
 /*nav bar modal*/
@@ -19,6 +19,7 @@
 /*myspace icon for data-bind*/
 /*modal not working*/
 /*twitter account*/
+/*make background image responsive*/
 /*publish*/
 
 
@@ -29,12 +30,8 @@ body {
 }
 
 /*Jumbotron*/
-.bgimg {
-	background: url(StringX-Background-lg.jpg) no-repeat center center;
-	background-size: cover;
-	background-color: black;
-	color: whitesmoke;
-	height: 100vh;
+.title {
+	/*font-size: 2.5em;*/
 }
 
 /*Modal*/
@@ -57,18 +54,51 @@ body {
 	opacity: 0.35;
 }
 
-
 /*###################################################################################*/
+
+/*old/new iPhones/Galaxy*/
+.bgimg {
+	background-size: cover;
+	background-color: black;
+	color: whitesmoke;
+	height: 100vh;
+	background: url(StringX-Background-xs.jpg) no-repeat center center;
+}
 
 @media screen and (orientation: portrait) {
 
 	.bgimg {
 		background-size: cover;
-		/*background: url(Twisted-Scenery-pic-md.jpg) no-repeat center center;*/
+		background-color: black;
+		color: whitesmoke;
+		height: 100vh;
+		background: url(Its-You-pic-xs.jpg) no-repeat top center;
 	}
 }
 
-/*@media screen and (min-width: 650px) {
+/*new iPhones/Notes*/
+@media screen and (min-width: 400px) {
+
+	.bgimg {
+		background-size: cover;
+		background-color: black;
+		color: whitesmoke;
+		height: 100vh;
+		background: url(StringX-Background-sm.jpg) no-repeat center center;
+	}
+
+	@media screen and (orientation: portrait) {
+		.bgimg {
+			background-size: cover;
+			height: 100vh;
+			background: url(Its-You-pic-sm.jpg) no-repeat top center;
+			/*background: url(Twisted-Scenery-pic-sm.jpg) no-repeat top center;*/
+		}
+	}
+}
+
+/*iPad/new iPhones*/
+@media screen and (min-width: 700px) {
 
 	.bgimg {
 		background-size: cover;
@@ -79,17 +109,70 @@ body {
 	}
 
 	@media screen and (orientation: portrait) {
-
 		.bgimg {
-			background-size: contain;
-			background: url(Twisted-Scenery-pic-lg.jpg) no-repeat center center;
+			background-size: cover;
+			background: url(Its-You-pic-md.jpg) no-repeat top center;
 		}
 	}
 }
 
-*/
+/*iPad*/
+@media screen and (min-width: 1000px) {
 
-/*###################################################################################*/
+	.bgimg {
+		background-size: cover;
+		background-color: black;
+		color: whitesmoke;
+		height: 100vh;
+		background: url(StringX-Background-lg.jpg) no-repeat center center;
+	}
+
+	@media screen and (orientation: portrait) {
+
+		.bgimg {
+			background-size: cover;
+			background: url(Its-You-pic-lg.jpg) no-repeat top center;
+			/*background: url(Twisted-Scenery-pic-sm.jpg) no-repeat top center;*/
+		}
+	}
+}
+
+/*laptop/kindle*/
+@media screen and (min-width: 1500px) {
+
+	.bgimg {
+		background-size: cover;
+		background-color: black;
+		color: whitesmoke;
+		height: 100vh;
+		background: url(StringX-Background-xl.jpg) no-repeat top center;
+	}
+
+	@media screen and (orientation: portrait) {
+
+		.bgimg {
+			background-size: cover;
+			height: 100vh;
+			background: url(Its-You-pic-xl.jpg) no-repeat top center;
+			/*background: url(Twisted-Scenery-pic-sm.jpg) no-repeat top center;*/
+		}
+	}
+}
+
+/*wide screen media*/
+@media screen and (min-width: 3000px) {
+
+	.bgimg {
+		background-size: cover;
+		background-color: black;
+		color: whitesmoke;
+		height: 100vh;
+		background: url(StringX-Background.jpg) no-repeat top center;
+	}
+}
+
+
+/*###################################################################################
 
 
 /*body*/
