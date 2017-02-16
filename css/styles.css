@@ -29,11 +29,6 @@ body {
 	/*font-family: 'Special Elite', regular;*/
 }
 
-/*Jumbotron*/
-.title {
-	/*font-size: 2.5em;*/
-}
-
 /*Modal*/
 .modal-title {
 	font-weight: bold;
@@ -65,13 +60,18 @@ body {
 	background: url(StringX-Background-xs.jpg) no-repeat center center;
 }
 
+/*Jumbotron*/
+#title-logo {
+	font-size: 7.5em;
+}
+
 @media screen and (orientation: portrait) {
 
 	.bgimg {
 		background-size: cover;
 		background-color: black;
 		color: whitesmoke;
-		height: 100vh;
+	/*	height: 100vh;*/
 		background: url(Its-You-pic-xs.jpg) no-repeat top center;
 	}
 }

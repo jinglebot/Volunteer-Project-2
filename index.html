@@ -67,7 +67,7 @@
 		<div class="jumbotron bgimg text-center">
 
 			<!-- Title Logo -->
-			<h1  class="font-effect-3d-float title" style="margin: 1em auto">
+			<h1  id="title-logo" class="font-effect-3d-float title" style="margin: 0.5em auto">
 				<a style="font-family: 'UnifrakturMaguntia', cursive; color: white">string</a><a  style="font-family: 'UnifrakturCook', cursive; letter-spacing: 0.1em; color: maroon; font-size: 1.3em; vertical-align: top">X</a>
 			</h1>
 
@@ -131,7 +131,7 @@
 
 		<!-- Song List -->
 		<div class= "row" data-bind="foreach: songsArray" >
-			<div class="col-sm-12 col-md-12 col-lg-3" style= "display: inline-block; margin: 4em auto">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style= "display: inline-block; margin: 4em auto">
 				<div data-toggle="modal"  data-bind="attr: { 'data-target': songNum }" style= "background: url(images/vinyl-disc-record.png) no-repeat center center; background-size: contain; min-height: 150px; min-width: 150px; padding: 2.25em">
 					<h4 style="text-align: center; vertical-align: middle">
 						<b data-bind="text: title" style="font-family: 'IM Fell English SC', serif; color: maroon"></b>
