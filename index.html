@@ -39,7 +39,7 @@
 					<li><a class="clickable" data-toggle="modal" data-target="#about">About</a></li>
 					<li class="dropdown"><a id="songs" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Songs <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu" data-bind="foreach: songsArray">
-							<li><a data-toggle="modal" data-bind="text: title, attr: { 'data-target': songNum }"></a>
+							<li><a class="clickable" data-toggle="modal" data-bind="text: title, attr: { 'data-target': songNum }"></a>
 								<div class="divider"></div>
 							</li>
 						</ul>
@@ -94,7 +94,7 @@
 					<!-- Items -->
 					<div class="carousel-inner">
 						<div class="item active" data-bind="with: songsArray()[6]">
-							<div data-toggle="modal" data-bind= "attr: {'data-target': songNum}"> <!-- attr bindings won't work if in same div as with binding -->
+							<div class="clickable" data-toggle="modal" data-bind= "attr: {'data-target': songNum}"> <!-- attr bindings won't work if in same div as with binding -->
 								<h3 style="font-family: 'IM Fell English SC', serif; letter-spacing: 0.1em; color: white; text-shadow: 4px 4px 4px #aaa" data-bind="text: title"></h3>
 								<p style="font-family: 'Ruthie', cursive; letter-spacing: 0.1em; color: white" data-bind="text: verse"></p>
 								<div><small data-bind="text: author"></small></div>
@@ -102,7 +102,7 @@
 							</div>
 						</div>
 						<!-- ko foreach: songsArray -->
-						<div class="item" data-toggle="modal" data-bind="attr: {'data-target': songNum}">
+						<div class="clickable item" data-toggle="modal" data-bind="attr: {'data-target': songNum}">
 							<h3 style="font-family: 'IM Fell English SC', serif; letter-spacing: 0.1em; color: white; text-shadow: 4px 4px 4px #aaa" data-bind="text: title"></h3>
 							<p style="font-family: 'Ruthie', cursive; letter-spacing: 0.1em; color: white" data-bind="text: verse"></p>
 							<div><small data-bind="text: author"></small></div>
@@ -132,7 +132,7 @@
 		<!-- Song List -->
 		<div class= "row" data-bind="foreach: songsArray" >
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style= "display: inline-block; margin: 4em auto">
-				<div data-toggle="modal"  data-bind="attr: { 'data-target': songNum }" style= "background: url(images/vinyl-disc-record.png) no-repeat center center; background-size: contain; min-height: 150px; min-width: 150px; padding: 2.25em">
+				<div class="clickable" data-toggle="modal"  data-bind="attr: { 'data-target': songNum }" style= "background: url(images/vinyl-disc-record.png) no-repeat center center; background-size: contain; min-height: 150px; min-width: 150px; padding: 2.25em">
 					<h4 style="text-align: center; vertical-align: middle">
 						<b data-bind="text: title" style="font-family: 'IM Fell English SC', serif; color: maroon"></b>
 					</h4>
