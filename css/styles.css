@@ -9,6 +9,10 @@ li {
 	margin-right: 1.5em;
 }
 
+.clickable {
+	cursor: pointer;
+}
+
 /*Navbar*/
 #navlogo {
 	display: none;

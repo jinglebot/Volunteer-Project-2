@@ -38,21 +38,21 @@ module.exports = function(grunt) {
                         quality: 100
                     },{
                         name: 'md',
-                        width: '1500',
+                        width: '1000',
                         // suffix: '_md',
-                        quality: 80
+                        quality: 100
                     },{
                         name: 'lg',
-                        width: '2500',
+                        width: '1500',
                         // suffix: '_lg',
-                        quality: 80
+                        quality: 100
                     }]
                 },
                 files: [{
                     expand: true,
                     // cwd: 'src/',
                     // src: ['***/**/*.{gif,jpg,png}'],
-                    src: ['images/Twisted-Scenery-pic.jpg'],
+                    src: ['imgs/StringX-Background.jpg'],
                     dest: 'imgs/'
                 }]
             }
