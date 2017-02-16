@@ -30,6 +30,7 @@ TO DO:
 - [x] navlogo
 - [x] nav transparency not working
 - [x] modal-header style
+- [ ] web-optimization
 - [ ] publish
 
 
