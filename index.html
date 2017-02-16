@@ -34,7 +34,7 @@
 
 		    	<!-- Left Nav -->
 				<ul class="nav navbar-nav">
-					<li><a style="font-family: 'UnifrakturMaguntia', cursive; font-size: 1.3em; color: white">string<big  style="font-family: 'UnifrakturCook', cursive; color: maroon; vertical-align: bottom">X</big></a></li>
+					<li id="navlogo"><a style="font-family: 'UnifrakturMaguntia', cursive; font-size: 1.3em; color: white">string<big  style="font-family: 'UnifrakturCook', cursive; color: maroon; vertical-align: bottom">X</big></a></li>
 					<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
 					<li><a data-toggle="modal" data-target="#about">About</a></li>
 					<li class="dropdown"><a id="songs" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Songs <span class="caret"></span></a>
@@ -175,7 +175,6 @@
 			        <br>
 			        <div>
 			            <p>Made by <a href="https://www.linkedin.com/in/mariacristinasales" rel="nofollow">@jinglebot</a>. Contact her at <a href="mailto:jingle1216@yahoo.com">jinglebot-Email</a> or <a href="https://github.com/jinglebot/" rel="nofollow">jinglebot-GitHub</a>.</p>
-			            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a> and <a href="http://www.clipartkid.com/" rel="nofollow">Clipart Kid</a>.</p>
 			        </div>
 		 		</div>
 			</div>
@@ -200,9 +199,9 @@
 							</a>
 						</figure>
 						</br>
+		  				<p data-bind="text: verse"></p>
 		  				<p>Created by <i data-bind="text: author"></i></p>
 		  				<p><i data-bind="text: location"></i>, <i data-bind="text: year"></i></p>
-		  				<p data-bind="text: verse"></p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

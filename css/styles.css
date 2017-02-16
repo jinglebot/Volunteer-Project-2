@@ -1,32 +1,76 @@
-/*DONE:*/
-/*media queries breakpoints 650, 1000, 2000*/
-/*jumbotron bgimg*/
-/*jumbotron title*/
-/*jumbotron p*/
-/*carousel*/
-/*nav bar*/
-/*nav bar transparent*/
-/*footer*/
-/*mvc format*/
-/*song list modal*/
-/*knockout model*/
-/*nav bar modal*/
-/*carousel-knockout*/
-/*carousel modal*/
-/*modal modal-content*/
-/*playlist style or single track record style*/
-/*contact info json format, input format*/
-/*myspace icon for data-bind*/
-/*modal not working*/
-/*twitter account*/
-/*make background image responsive*/
-/*publish*/
-
-
 /*general style*/
-body {
+body,
+.modal-title {
 	font-family: 'IM Fell English SC', serif;
 	/*font-family: 'Special Elite', regular;*/
+}
+
+li {
+	margin-right: 1.5em;
+}
+
+/*Navbar*/
+#navlogo {
+	display: none;
+}
+
+/*Jumbotron*/
+#title-logo {
+	font-size: 7.5em;
+}
+
+/*Footer*/
+footer {
+	margin: 5em 0;
+}
+
+footer li {
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+footer p {
+	clear: left;
+	margin-bottom: 0;
+}
+
+/*Carousel*/
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+	height: 100%;
+	max-height: 35vh;
 }
 
 /*Modal*/
@@ -58,11 +102,6 @@ body {
 	color: whitesmoke;
 	height: 100vh;
 	background: url(StringX-Background-xs.jpg) no-repeat center center;
-}
-
-/*Jumbotron*/
-#title-logo {
-	font-size: 7.5em;
 }
 
 @media screen and (orientation: portrait) {
@@ -100,6 +139,10 @@ body {
 /*iPad/new iPhones*/
 @media screen and (min-width: 700px) {
 
+	#navlogo {
+		display: block;
+	}
+
 	.bgimg {
 		background-size: cover;
 		background-color: black;
@@ -118,6 +161,18 @@ body {
 
 /*iPad*/
 @media screen and (min-width: 1000px) {
+
+	body>.navbar-transparent {
+		background-color:transparent;
+	}
+
+	body>.navbar-inverse {
+		border-color:transparent;
+	}
+
+	body>.navbar-transparent .navbar-nav>.open>a {
+		background-color:transparent!important;
+	}
 
 	.bgimg {
 		background-size: cover;
@@ -170,199 +225,3 @@ body {
 		background: url(StringX-Background.jpg) no-repeat top center;
 	}
 }
-
-
-/*###################################################################################
-
-
-/*body*/
-/*#home {
-	padding-top:0;
-}
-*/
-
-/*.carousel {
-	padding: 1em;
-}
-*/
-
-/*#home .navbar-brand {
-	padding:13.5px 15px 12.5px;
-}
-*/
-/*#home .navbar-brand>img {
-	display:inline;
-	margin:0 10px;
-	height:100%;
-}
-*/
-li {
-	/*float: left;*/
-	margin-right: 1.5em;
-}
-
-#navlogo {
-	display: none;
-}
-
-/*.rotate {
-	transform: rotate(-40deg);
-	transform-origin: left bottom 10;
-}
-
-.well {
-	background-color: transparent;
-	border-color: transparent;
-	box-shadow: transparent;
-	display: block;
-}
-
-
-.carousel-fade .item {
-	-webkit-transition: opacity ease-in-out 5s;
-	-moz-transition: opacity ease-in-out 5s;
-	-o-transition: opacity ease-in-out 5s;
-	transition: opacity ease-in-out 5s;
-}
-
-.carousel-fade .active.left,
-.carousel-fade .active.right {
-	left: 0;
-	z-index: 2;
-	opacity: 0;
-	filter: alpha(opacity = 0);
-}
-
-#carousel {
-	font-family: 'Arial', sans-serif;
-	letter-spacing: 0.07em;
-}
-*/
-
-footer {
-	margin: 5em 0;
-}
-
-footer li {
-	float: left;
-	margin-right: 1.5em;
-	margin-bottom: 1.5em;
-}
-
-footer p {
-	clear: left;
-	margin-bottom: 0;
-}
-
-/*@media screen and (min-width: 765px) {
-
-	#navlogo {
-		display: block;
-	}
-}*/
-
-/*@media screen and (min-width: 1000px) {
-	body>.navbar-transparent {
-		background-color:transparent;
-	}
-
-	body>.navbar-inverse {
-		border-color:transparent;
-	}
-
-	body>.navbar-transparent .navbar-nav>.open>a {
-		background-color:transparent!important;
-	}
-
-	.bgimg {
-		background-size: cover;
-		background-color: black;
-		color: whitesmoke;
-		height: 100vh;
-		/*background: url(StringX-Background-md.jpg) no-repeat center center;
-	}
-}
-*/
-/*@media screen and (min-width: 1500px) {
-
-	.bgimg {
-		background-size: cover;
-		background-color: black;
-		color: whitesmoke;
-		height: 100vh;
-		/*background: url(StringX-Background-lg.jpg) no-repeat center center;
-	}
-
-	div h4 {
-		font-size: 4em;
-	}
-
-
-	@media screen and (orientation: portrait) {
-
-		.bgimg {
-			background-size: contain;
-			background: url(StringX-Background.jpg) no-repeat center center;
-		}
-
-/*		#carousel h5, h6{
-			font-size: 4em;
-		}
-	}
-
-}
-
-*//*@media screen and (min-width: 2000px) {
-
-	.bgimg {
-		background-size: cover;
-		background-color: black;
-		color: whitesmoke;
-		height: 100vh;
-		background: url(Twisted-Scenery-pic.jpg) no-repeat center center;
-	}
-
-	div h4 {
-		font-size: 6em;
-	}
-
-/*	#carousel h5, h6{
-		font-size: 4em;
-	}
-}
-
-*/
-
-
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-html,
-body,
-.carousel,
-.carousel-inner,
-.carousel-inner .item {
-  height: 100%;
-  max-height: 35vh;
-}
-
