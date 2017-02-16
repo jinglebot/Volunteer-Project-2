@@ -2,8 +2,8 @@
 
 HTML, CSS, JavaScript, jQuery, KnockoutJS, Bootstrap
 
-Based on (http://getbootstrap.com)[Bootstrap].
-Icons from (http://fortawesome.github.io/Font-Awesome/)[Font Awesome] and (http://www.clipartkid.com/)[Clipart Kid].
+Based on [Bootstrap] (http://getbootstrap.com).
+Icons from [Font Awesome] (http://fortawesome.github.io/Font-Awesome/) and [Clipart Kid] (http://www.clipartkid.com/).
 
 TO DO:
 - [x] media queries breakpoints 700, 1000, 3000
