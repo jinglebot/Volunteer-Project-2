@@ -8,7 +8,8 @@ var songs = [{
 	location: "San Francisco, CA",
 	year: 2015,
 	visibility: "hidden",
-	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+	youtubeId: "https://www.youtube.com/embed/vr3SMhpyZpY"
 	}, {
 	songId: "song2",
 	songNum: "#song2",
@@ -18,7 +19,8 @@ var songs = [{
 	location: "San Francisco, CA",
 	year: 2014,
 	visibility: "hidden",
-	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+	youtubeId: "https://www.youtube.com/watch?v=ns-dmqVFc6w"
 	}, {
 	songId: "song3",
 	songNum: "#song3",
@@ -28,7 +30,8 @@ var songs = [{
 	location: "San Francisco, CA",
 	year: 2013,
 	visibility: "hidden",
-	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+	youtubeId: "https://www.youtube.com/watch?v=lU7DNBPblGg"
 	}, {
 	songId: "song4",
 	songNum: "#song4",
@@ -38,7 +41,8 @@ var songs = [{
 	location: "San Francisco, CA",
 	year: 2015,
 	visibility: "hidden",
-	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+	youtubeId: "https://www.youtube.com/watch?v=bhqd3bq-kEY"
 	}, {
 	songId: "song5",
 	songNum: "#song5",
@@ -48,7 +52,8 @@ var songs = [{
 	location: "San Francisco, CA",
 	year: 2014,
 	visibility: "hidden",
-	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+	youtubeId: "https://www.youtube.com/watch?v=f6U4eseD3xE"
 	}, {
 	songId: "song6",
 	songNum: "#song6",
@@ -58,7 +63,8 @@ var songs = [{
 	location: "San Francisco, CA",
 	year: 2015,
 	visibility: "hidden",
-	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+	youtubeId: "https://www.youtube.com/watch?v=_WRtHNcvhFM"
 	}, {
 	songId: "song7",
 	songNum: "#song7",
@@ -68,7 +74,8 @@ var songs = [{
 	location: "San Francisco, CA",
 	year: 2013,
 	visibility: "hidden",
-	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+	youtubeId: "https://www.youtube.com/watch?v=Gh5w0C6729A"
 	}, {
 	songId: "song8",
 	songNum: "#song8",
@@ -78,7 +85,8 @@ var songs = [{
 	location: "San Francisco, CA",
 	year: 2014,
 	visibility: "hidden",
-	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+	youtubeId: "https://www.youtube.com/watch?v=oZ3i4B8r3xU"
 	}, {
 	songId: "song9",
 	songNum: "#song9",
@@ -88,7 +96,8 @@ var songs = [{
 	location: "San Francisco, CA",
 	year: 2014,
 	visibility: "hidden",
-	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+	youtubeId: "https://www.youtube.com/watch?v=a__57HA-R58"
 	}, {
 	songId: "song10",
 	songNum: "#song10",
@@ -98,7 +107,8 @@ var songs = [{
 	location: "San Francisco, CA",
 	year: 2013,
 	visibility: "hidden",
-	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+	youtubeId: "https://www.youtube.com/watch?v=iXOMO-3otLQ"
 	}];
 
 
