@@ -125,10 +125,6 @@ var contactInfo = [{
 	link: "https://www.youtube.com/channel/UCQxBagOqdj7HhJDFXGKdGPA",
 	icon: "fa fa-youtube"
 	}, {
-	medium: "Twitter",
-	link: "#",
-	icon: "fa fa-twitter"
-	}, {
 	medium: "Spotify",
 	link: "https://open.spotify.com/artist/3QdpYbQD76eKzVinGfeyhc",
 	icon: "fa fa-spotify"
