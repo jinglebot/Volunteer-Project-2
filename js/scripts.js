@@ -8,7 +8,8 @@ var songs = [{
 	location: "San Francisco, CA",
 	year: 2015,
 	visibility: "hidden",
-	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+	youtubeId: "this is a youtube link"
 	}, {
 	songId: "song2",
 	songNum: "#song2",
