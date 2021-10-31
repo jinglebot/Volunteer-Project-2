@@ -121,17 +121,17 @@ var contactInfo = [{
 	link: "mailto:stringxherrera@yahoo.com",
 	icon: "glyphicon glyphicon-envelope"
 	}, {
-	medium: "Facebook",
-	link: "https://www.facebook.com/stringx",
-	icon: "fa fa-facebook"
+	medium: "YouTube",
+	link: "https://www.youtube.com/channel/UCQxBagOqdj7HhJDFXGKdGPA",
+	icon: "fa fa-youtube"
 	}, {
 	medium: "Twitter",
 	link: "#",
 	icon: "fa fa-twitter"
 	}, {
 	medium: "Myspace",
-	link: "https://myspace.com/johnhpo1/music/songs",
-	icon: "glyphicon glyphicon-option-horizontal"
+	link: "https://open.spotify.com/artist/3QdpYbQD76eKzVinGfeyhc",
+	icon: "fa fa-spotify"
 	}];
 
 // VIEWMODEL
