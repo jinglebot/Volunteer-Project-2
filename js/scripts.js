@@ -20,7 +20,7 @@ var songs = [{
 	year: 2014,
 	visibility: "hidden",
 	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	youtubeId: "https://www.youtube.com/watch?v=ns-dmqVFc6w"
+	youtubeId: "https://www.youtube.com/embed/ns-dmqVFc6w"
 	}, {
 	songId: "song3",
 	songNum: "#song3",
@@ -31,7 +31,7 @@ var songs = [{
 	year: 2013,
 	visibility: "hidden",
 	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	youtubeId: "https://www.youtube.com/watch?v=lU7DNBPblGg"
+	youtubeId: "https://www.youtube.com/embed/lU7DNBPblGg"
 	}, {
 	songId: "song4",
 	songNum: "#song4",
@@ -42,7 +42,7 @@ var songs = [{
 	year: 2015,
 	visibility: "hidden",
 	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	youtubeId: "https://www.youtube.com/watch?v=bhqd3bq-kEY"
+	youtubeId: "https://www.youtube.com/embed/bhqd3bq-kEY"
 	}, {
 	songId: "song5",
 	songNum: "#song5",
@@ -53,7 +53,7 @@ var songs = [{
 	year: 2014,
 	visibility: "hidden",
 	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	youtubeId: "https://www.youtube.com/watch?v=f6U4eseD3xE"
+	youtubeId: "https://www.youtube.com/embed/f6U4eseD3xE"
 	}, {
 	songId: "song6",
 	songNum: "#song6",
@@ -64,7 +64,7 @@ var songs = [{
 	year: 2015,
 	visibility: "hidden",
 	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	youtubeId: "https://www.youtube.com/watch?v=_WRtHNcvhFM"
+	youtubeId: "https://www.youtube.com/embed/_WRtHNcvhFM"
 	}, {
 	songId: "song7",
 	songNum: "#song7",
@@ -75,7 +75,7 @@ var songs = [{
 	year: 2013,
 	visibility: "hidden",
 	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	youtubeId: "https://www.youtube.com/watch?v=Gh5w0C6729A"
+	youtubeId: "https://www.youtube.com/embed/Gh5w0C6729A"
 	}, {
 	songId: "song8",
 	songNum: "#song8",
@@ -86,7 +86,7 @@ var songs = [{
 	year: 2014,
 	visibility: "hidden",
 	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	youtubeId: "https://www.youtube.com/watch?v=oZ3i4B8r3xU"
+	youtubeId: "https://www.youtube.com/embed/oZ3i4B8r3xU"
 	}, {
 	songId: "song9",
 	songNum: "#song9",
@@ -97,7 +97,7 @@ var songs = [{
 	year: 2014,
 	visibility: "hidden",
 	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	youtubeId: "https://www.youtube.com/watch?v=a__57HA-R58"
+	youtubeId: "https://www.youtube.com/embed/a__57HA-R58"
 	}, {
 	songId: "song10",
 	songNum: "#song10",
@@ -108,7 +108,7 @@ var songs = [{
 	year: 2013,
 	visibility: "hidden",
 	reflection: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	youtubeId: "https://www.youtube.com/watch?v=iXOMO-3otLQ"
+	youtubeId: "https://www.youtube.com/embed/iXOMO-3otLQ"
 	}];
 
 
