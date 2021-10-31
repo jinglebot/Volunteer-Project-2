@@ -129,7 +129,7 @@ var contactInfo = [{
 	link: "#",
 	icon: "fa fa-twitter"
 	}, {
-	medium: "Myspace",
+	medium: "Spotify",
 	link: "https://open.spotify.com/artist/3QdpYbQD76eKzVinGfeyhc",
 	icon: "fa fa-spotify"
 	}];
